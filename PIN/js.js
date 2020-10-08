@@ -4,19 +4,19 @@ let i = 0;
 function addPIN(key){
     yourPIN[i] = key
     i++;
+    document.getElementById("green").style.backgroundColor = "#32A60D";
+    document.getElementById("red").style.backgroundColor = "#A51818";
     console.log("yourPIN = " + yourPIN);
-}
-function correctPIN(){
     document.querySelector('#input').textContent = yourPIN.join('')
     if (yourPIN.length == rightPIN.length) {
         if (JSON.stringify(yourPIN)==JSON.stringify(rightPIN)) {
-            console.log("rätt");
+            document.getElementById("green").style.backgroundColor = "#4EFF16";
+            yourPIN = []
+            i = 0;
         } else {
-            console.log("fel kod");
+            document.getElementById("red").style.backgroundColor = "#FF2525";
+            yourPIN = []
+            i = 0;
         }
-    } else {
-        console.log("för lång");
     }
-    yourPIN = []
-    i = 0;
 }

@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.input {
+    width: 30%;
+    height: 30%;
+    font-size: 30px;
+    margin: 5px;
+}
+#green, #red {
+    height: 30px;
+    width: 47%;
+    background-color: black;
+    float: left;
+    margin: 5px;
+}
+#green {
+    background-color: #32A60D;
+}
+#greenOn {
+    background-color: #4EFF16;
+}
+#red {
+    background-color: #A51818;
+}
+#redOn {
+    background-color: #FF2525;
+}
+#input{
+    width: 97%;
+    height: 30px;
+    text-align: center;
+    background-color: aqua;
+    margin-left: 5px;
+    margin-bottom: -3px;
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -5%;
+    margin-left: -10%;
+}
+.container {
+    width: 400px;
+    height: 300px;
+}
